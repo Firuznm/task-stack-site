@@ -1,0 +1,26 @@
+#cift-slider{
+	.container{
+		.cift-image{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			img{
+				height: 33rem;
+			}
+		}
+	}
+}
+
+// responsive start
+@media  screen and (max-width: 820px) {
+	#cift-slider{
+		.container{
+			width: 95%;
+			.cift-image{
+				img{
+					height: 15rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,78 @@
+@import "../../ColorListSite/style.scss";
+
+// flex mixen
+@mixin fl-btwn-centr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin fl-concetr-centr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin fl-clum {
+	display: flex;
+	flex-direction: column;
+}  
+
+@mixin fl-btw {
+	display: flex;  
+	justify-content: space-between;
+}
+@mixin fl-Alcentr{
+	display: flex;
+	align-items: center;
+}
+
+//----- cart copmonent style start ---
+.cart{
+	text-align: center;
+	img{
+		height: 16rem;
+		aspect-ratio: 3/3;
+		object-fit: cover;
+		transition: all .3s;
+		cursor: pointer;
+		&:hover{
+			transform: scale(1.2) rotate(7deg);
+		}
+	}
+	h5{
+        font-size: 2rem;
+		font-weight: 900;
+		height: 6rem;
+	}
+	p{
+		font-size: 1.3rem;
+		font-weight: 600;
+		opacity: .8;
+		margin: 1rem 0;
+	}
+} 
+
+//----- cart copmonent respobsive style start ---
+@media  screen and (max-width: 820px) {
+	.cart{
+		margin-top: 1.5rem;
+		img{
+			height: 10rem;
+			&:hover{
+				transform: none;
+			}
+		}
+		h5{
+			font-size: 1rem;
+			font-weight: 700;
+			height: 2rem;
+		}
+		p{
+			font-size: .7rem;
+			font-weight: 300;
+			opacity: .8;
+			margin: 0;
+		}
+	}
+}

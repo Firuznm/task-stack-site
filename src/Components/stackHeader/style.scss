@@ -1,0 +1,74 @@
+@import "../../ColorListSite/style.scss";
+
+// flex mixen
+@mixin fl-btwn-centr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin fl-concetr-centr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin fl-clum {
+	display: flex;
+	flex-direction: column;
+}  
+
+@mixin fl-btw {
+	display: flex;  
+	justify-content: space-between;
+}
+@mixin fl-Alcentr{
+	display: flex;
+	align-items: center;
+}
+
+// ------- stack header default style start -------
+nav{
+	width: 100%;
+	background-color: $stackHeaderBgColor;
+	position: sticky;
+	top: 0;
+	z-index: 999999;
+header{
+	@include fl-btwn-centr();
+	height: 7rem;
+	width: 95%;
+	margin: 0 auto;
+	a{
+		height: 70%;
+	img{
+	    height: 100%;
+		object-fit: cover;
+	}
+}
+.hamburger-menu{
+	font-size: 4rem;
+	font-weight: 500;
+	color: $hamburgerMenuColor;
+}
+}
+}
+
+// --- header section responsive start -----
+@media  screen and (max-width: 820px) {
+	nav{
+	header{
+		height: 4rem;
+		.header-btn{
+			display: none;
+		}
+		a{
+			height: 50%;
+			margin: 0;
+	}
+	.hamburger-menu{
+		font-size: 2rem;
+	}
+	}
+	}
+   }

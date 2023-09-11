@@ -1,0 +1,79 @@
+@import "../../ColorListSite/style.scss";
+
+// flex mixen
+@mixin fl-btwn-centr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin fl-concetr-centr {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin fl-clum {
+	display: flex;
+	flex-direction: column;
+}  
+
+@mixin fl-btw {
+	display: flex;  
+	justify-content: space-between;
+}
+@mixin fl-Alcentr{
+	display: flex;
+	align-items: center;
+}
+
+// ------- stack unleash section default style start -------
+#unlaesh{
+ .container{
+	.unlaesh-header{
+		text-align: center;
+		margin-bottom: 4rem;
+		h2{
+			font-size: 6rem;
+			font-weight:800;
+			line-height: 7rem;
+		}
+		p{
+			font-size: 2rem;
+			font-weight: 600;
+			margin-bottom: 2rem;
+		}
+		.btn{
+			background-color: transparent;
+			border: none;
+		}
+	}
+ }	
+}
+
+// ------- stack responsive section default style start -------
+@media  screen and (max-width: 820px) {
+	#unlaesh{
+		.container{
+			width: 95%;
+		   .unlaesh-header{
+			   h2{
+				   font-size: 1.5rem;
+				   line-height: 2rem;
+				   margin-bottom: 1rem;
+			   }
+			   p{
+				   font-size: 1rem;
+				   font-weight: 400;
+				   line-height: 1rem;
+				   text-align: justify;
+			   }
+			   .btn{
+				   width: 100%;
+			   }
+		   }
+		}	
+	   }
+}
+
+

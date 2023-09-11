@@ -1,0 +1,65 @@
+
+a.link-btn{
+	height: auto;
+	font-weight: 600;
+	font-size: 1.3rem;
+	padding: 1rem 1.5rem;
+	border-radius: 10px;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	transition: all .3s; 
+	&:hover{
+		transform: translateY(-10px);	
+	}
+}
+// --------------------------------------------------
+.yellow-white{
+	background-color: #ffcc19;
+	color: black;
+	&:hover{
+     background-color: white;
+	}
+}
+// -------------------------------------------------
+.white-yellow{
+	background-color: white;
+	color: black;
+	&:hover{
+		background-color:#ffcc19;
+	}
+}
+// ----------------------------------------------
+.black-yellow{
+	background-color: black;
+	color: #ffcc19;
+	&:hover{
+		background-color: #ffcc19;
+		color: black;
+	}
+}
+// ---------------------------------------------
+.white-black{
+	background-color: black;
+	color: #ffcc19;
+	&:hover{
+		background-color: white;
+		color: black;
+	}
+}
+
+
+// --- responsive start -----
+@media  screen and (max-width: 820px) {
+	a.link-btn{
+		font-weight: 400;
+		font-size: .7rem;
+		display: block;
+		text-align: center;
+		&:hover{
+			transform: none;	
+		}
+	}
+
+}
+
